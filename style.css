@@ -1,0 +1,42 @@
+body { margin: 0; }
+.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 700px;
+    background-image: url(images/bg.jpg);
+	background-size: cover;
+}
+
+.header {
+	padding-top: 10%;
+}
+
+.learn {
+    background-color: #5a1e09;
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 15px;
+//    margin: 0px -15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.shadow {
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+
+	background-color: lightblue;
+}
+
+.inputdob {
+	background-color: #e9e4e7;
+	color: #545252;
+}
+
+
+
+
+
