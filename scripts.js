@@ -22,6 +22,10 @@ function consYear() {
 	var	yourHour = parseInt(yourMinutes/60);
 	var	yourDay = parseInt(yourHour/24);
 
+	document.getElementById('outputDay').innerHTML = yourDay;
+	document.getElementById('outputMinutes').innerHTML = yourMinutes;
+	document.getElementById('outputSek').innerHTML = yourSek;
+
 	console.log('Вы родились в '+years+' году');
 	console.log('Вам '+yourSek+' секунд');
 	console.log('Вам '+yourHour+' часов');
@@ -30,5 +34,4 @@ function consYear() {
 	console.log('Вы родились в '+years+' году, в '+moon+ ' месяце и в '+day+' дня');
 //	console.log('Сейчас '+nowDate.getFullYear()+' год, '+nowDate.getMonth()+ ' месяц и '+nowDate.getDate()+' день');
 }
-
 
