@@ -3,6 +3,7 @@
 <head>
     <title>Моя круглая дата</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="scripts.js"></script>
     <!-- Meta-tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
@@ -19,12 +20,12 @@
 			</div>
 				<h3 class="inputdob">Введи свой день рождения:</h3>
 			<div>
-				<form class="was-validated 1ustify-content-around"">
+				<form class="was-validated">
 					<div class="input-group mb-2">
 					    <div class="input-group-prepend">
 					    	<label class="input-group-text dob-label" for="inputSelectDay">День</label>
 					    </div>
-						<select type="text" class="form-control " placeholder="" aria-label="" aria-describedby="basic-addon1" required >
+						<select  class="form-control " placeholder="" id="inputSelectDay" onchange="consDay()" required >
 					   	<option value=""></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -63,8 +64,8 @@
 					    <div class="input-group-prepend">
 					    	<label class="input-group-text dob-label" for="inputSelectMonth">Месяц</label>
 					    </div>
-						<select type="text" class="form-control " placeholder="" aria-label="" aria-describedby="basic-addon1" required>
-							<option selected></option>
+						<select type="text" class="form-control" placeholder="" id="inputSelectMonth" onchange="consMoon()" required>
+							<option value=""></option>
 						    <option value="1">январь</option>
 						    <option value="2">февраль</option>
 						    <option value="3">март</option>
@@ -83,7 +84,7 @@
 					    <div class="input-group-prepend">
 					    	<label class="input-group-text dob-label" for="inputSelectYears">Год</label>
 					    </div>
-						<input type="text" class="form-control" id="inputSelectYears" required>
+						<input type="text" class="form-control" id="inputSelectYears"onchange="consYear()" required>
 					</div>
 				</form>
 				<h3 class="inputdob">Введите время рождения</h3>
