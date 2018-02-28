@@ -33,5 +33,6 @@ function consYear() {
 	console.log('Вам '+yourDay+' дней');
 	console.log('Вы родились в '+years+' году, в '+moon+ ' месяце и в '+day+' дня');
 //	console.log('Сейчас '+nowDate.getFullYear()+' год, '+nowDate.getMonth()+ ' месяц и '+nowDate.getDate()+' день');
+
 }
 
