@@ -15,7 +15,7 @@ function nameDay() {
 
 
 //Функция вывода в консоль цифры кол-ва дней
-/*
+
 function submit() {
 	day = Number(document.getElementById('inputSelectDay').value);
 	moon = Number(document.getElementById('inputSelectMonth').value);
@@ -46,4 +46,3 @@ function submit() {
 
 
 
-*/
