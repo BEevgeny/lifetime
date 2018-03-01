@@ -1,7 +1,4 @@
-var day, moon, years;
-var nowDate = new Date();
-var wordDay;
-
+var day, moon, years, nowDate, wordDay, yourDate;
 
 
 //Функция вывода текста
@@ -17,14 +14,15 @@ function nameDay() {
 
 
 
-
 //Функция вывода в консоль цифры кол-ва дней
+/*
 function submit() {
 	day = Number(document.getElementById('inputSelectDay').value);
 	moon = Number(document.getElementById('inputSelectMonth').value);
 	years = Number(document.getElementById('inputSelectYears').value);
-	var	yourDate = new Date(years, moon-1, day);
-	var	yourSek = parseInt((nowDate-yourDate)/1000); /*  */
+	nowDate = new Date();
+	yourDate = new Date(years, moon-1, day);
+	var	yourSek = parseInt((nowDate-yourDate)/1000); 
 	var	yourMinutes = parseInt(yourSek/60);
 	var	yourHour = parseInt(yourMinutes/60);
 	var	yourDay = parseInt(yourHour/24);
@@ -34,7 +32,7 @@ function submit() {
 	document.getElementById('outputMinutes').innerHTML = yourMinutes;
 	document.getElementById('outputSek').innerHTML = yourSek;
 
-nameDay()
+	nameDay()
 
 	console.log('Вы родились в '+years+' году');
 	console.log('Вам '+yourSek+' секунд');
@@ -46,3 +44,6 @@ nameDay()
 
 }
 
+
+
+*/

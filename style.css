@@ -38,12 +38,17 @@ body { margin: 0; }
 .inputdob {
 	background-color: #e9e4e7;
 	color: #545252;
-	padding: 20px;
+    padding: 10px 0px 15px 10px;
 }
 
 .dob-label {
 	width: 100px;
 }
+
+.buttonSub {
+	margin-bottom: .5rem;
+}
+
 
 /*.footer {
 	background-image: url(images/bg.jpg);
