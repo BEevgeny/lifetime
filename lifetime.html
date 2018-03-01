@@ -23,9 +23,9 @@
 				<form class="was-validated col-6 offset-3">
 					<div class="input-group mb-2">
 					    <div class="input-group-prepend">
-					    	<label class="input-group-text dob-label" for="inputSelectDay">День</label>
+					    	<label class="input-group-text dob-label">День</label>
 					    </div>
-						<select  class="form-control" id="inputSelectDay" onchange="" required >
+						<select class="form-control" id="inputSelectDay" onchange="" required >
 					   	<option value=""></option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -263,7 +263,7 @@
 					</div>
 
 					<div class="row justify-content-center">
-						<button type="submit" class="btn btn-primary btn-lg" onchange="">Рассчитать</button>
+						<button type="submit" class="btn btn-primary btn-lg" onclick="submit()">Рассчитать</button>
 					</div>
 
 				</div>
@@ -275,25 +275,31 @@
 
 
 			<h2 class="inputdob">Ваш возраст:</h2>
-			<div class="input-group mb-3 col-4 offset-4">
-			  <div type="text" class="form-control" id="outputDay"></div>
-			  <div class="input-group-append">
-			    <span class="input-group-text dob-label">Дней</span>
-			  </div>
-			</div>
-
-			<div class="input-group mb-3 col-4 offset-4">
-			  <div type="text" class="form-control" id="outputMinutes"></div>
-			  <div class="input-group-append">
-			    <span class="input-group-text dob-label">Минут</span>
-			  </div>
-			</div>
-
-			<div class="input-group mb-3 col-4 offset-4">
-			  <div type="text" class="form-control" id="outputSek"></div>
-			  <div class="input-group-append">
-			    <span class="input-group-text dob-label">Секунд</span>
-			  </div>
+			<div class="col-6 offset-3">
+				<div class="input-group mb-3">
+				  <div type="text" class="form-control" id="outputDay" onchange="nameDay()" value=""></div>
+				  <div class="input-group-append">
+				    <label class="input-group-text dob-label" id="inputNameDay">День</label>
+				  </div>
+				</div>
+				<div class="input-group mb-3">
+				  <div type="text" class="form-control" id="outputHour"></div>
+				  <div class="input-group-append">
+				    <span class="input-group-text dob-label">Часов</span>
+				  </div>
+				</div>
+				<div class="input-group mb-3">
+				  <div type="text" class="form-control" id="outputMinutes"></div>
+				  <div class="input-group-append">
+				    <span class="input-group-text dob-label">Минут</span>
+				  </div>
+				</div>
+				<div class="input-group mb-3">
+				  <div type="text" class="form-control" id="outputSek"></div>
+				  <div class="input-group-append">
+				    <span class="input-group-text dob-label">Секунд</span>
+				  </div>
+				</div>
 			</div>
 		</div>
 
