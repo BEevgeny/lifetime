@@ -17,7 +17,7 @@ function consMoon() {
 function consYear() {
 	years = Number(document.getElementById('inputSelectYears').value);
 	var	yourDate = new Date(years, moon-1, day);
-	var	yourSek = parseInt(nowDate-yourDate/1000);
+	var	yourSek = parseInt(nowDate-yourDate/10000);
 	var	yourMinutes = parseInt(yourSek/60);
 	var	yourHour = parseInt(yourMinutes/60);
 	var	yourDay = parseInt(yourHour/24);
