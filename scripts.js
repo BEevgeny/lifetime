@@ -43,7 +43,7 @@ function submit() {
 
 
 
-//функция разбивки числа пробелами по 3 символа
+//Разделение числа пробелами по 3 символа
 var thousandSeparator = function(str) {
     var parts = (str + '').split('.'),
         main = parts[0],
