@@ -19,6 +19,8 @@ body { margin: 0;
 
 /*.header {
 	padding-top: 5%;
+	background-image: url(images/logo.jpg);
+	background-size: cover;
 }*/
 
 .learn {
@@ -37,6 +39,7 @@ body { margin: 0;
     padding: 15px;
     border-radius: 10px;
 }
+
 
 .inputdob {
 	background-color: #e9e4e7;
@@ -60,3 +63,4 @@ body { margin: 0;
     border-radius: 10px;
     height: 100px;
 }
+

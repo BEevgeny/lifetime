@@ -23,7 +23,7 @@
 					<h4 class="inputdob">Введи свой день рождения:</h4>
 				</div>
 				<div class="col-6">
-					<form class="was-validated *col-6 *offset-3">
+					<form class="was-validated">
 						<div class="input-group mb-2">
 						    <div class="input-group-prepend">
 						    	<label class="input-group-text dob-label">День</label>
@@ -165,7 +165,7 @@
 				<div class="col-6">
 					<h4 class="inputdob">Введите время рождения:</h4>
 				</div>
-				<div class="time_selection col-6">
+				<form class="time_selection col-6">
 					<div class="input-group mb-2 was-validated">
 					  	<div class="input-group-prepend">
 					    	<label class="input-group-text dob-label" for="inputSelectHours">Час</label>
@@ -267,7 +267,7 @@
 								    <option value="60">60</option>
 					   	</select>
 					</div>
-	   			</div>
+	   			</form>
 			</div>
 			<div class="text-center">
 				<button type="submit" class="btn btn-primary btn-lg buttonSub" onclick="submit()">Рассчитать</button>
@@ -283,7 +283,7 @@
 				<div class="col-6">
 						<h4 class="inputdob">Ваш возраст:</h4>
 				</div>
-				<div class="col-6">
+				<form class="col-6">
 					<div class="input-group mb-2">
 						<div type="text" class="form-control" id="outputSek"></div>
 						<div class="input-group-append">
@@ -303,28 +303,28 @@
 					  </div>
 					</div>
 					<div class="input-group mb-2">
-					  <div type="text" class="form-control" id="outputDay" onchange="nameDay()" value=""></div>
+					  <div type="text" class="form-control" id="outputDay" onchange="nameDay()"></div>
 					  <div class="input-group-append">
-					    <label class="input-group-text dob-label" id="inputNameDay">Дней</label>
+					    <label class="input-group-text dob-label">Дней</label>
 					  </div>
 					</div>
 					<div class="input-group mb-2">
-					  <div type="text" class="form-control" id="outputWeek" onchange="" value=""></div>
+					  <div type="text" class="form-control" id="outputWeek"></div>
 					  <div class="input-group-append">
-					    <label class="input-group-text dob-label" id="inputNameWeek">Недель</label>
+					    <label class="input-group-text dob-label">Недель</label>
 					  </div>
 					</div>
 					<div class="input-group mb-2">
-					  <div type="text" class="form-control" id="outputMoon" onchange="" value=""></div>
+					  <div type="text" class="form-control" id="outputMoon"></div>
 					  <div class="input-group-append">
-					    <label class="input-group-text dob-label" id="inputNameMoon">Месяцев</label>
+					    <label class="input-group-text dob-label">Месяцев</label>
 					  </div>
 					</div>
 
 
 
 
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
