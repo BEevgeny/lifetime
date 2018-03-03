@@ -2,7 +2,7 @@ html { height:100% }
 
 body {
 	margin: 0;
-	background-image: url(images/bg2.jpg);
+	background-image: url(images/bg.jpg);
     background-size: cover;
 }
 .conteiner {
@@ -30,6 +30,9 @@ body {
     border-radius: 10px;
 }
 
+.roundDate {
+    white-space: normal;
+}
 
 .inputdob {
 	background-color: #e9e4e7;
@@ -48,6 +51,5 @@ body {
 
 .footer {
     border-radius: 0px 0px 10px 10px;
-    height: 100px;
 }
 

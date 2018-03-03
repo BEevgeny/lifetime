@@ -1,19 +1,6 @@
 var day, moon, years, nowDate, wordDay, yourDate;
 
 
-//Функция вывода текста
-/*function nameDay() {
-	console.log('Вывод текста - дни заменены');
-
-	wordDay = Number(document.getElementById('outputDay').value);
-	if (wordDay > 0) {
-		wordDay = 'Денечек';
-	}
-	
-	document.getElementById('inputNameDay').innerHTML = "Дней";
-}
-*/
-
 
 //Функция вывода в консоль цифры кол-ва дней
 function submit() {
@@ -31,15 +18,29 @@ function submit() {
 
 	document.getElementById('outputMoon').innerHTML = thousandSeparator(yourMoon);
 	document.getElementById('outputWeek').innerHTML = thousandSeparator(yourWeek);
+	document.getElementById('outputDay').innerHTML = thousandSeparator(yourDay);
 	document.getElementById('outputHour').innerHTML = thousandSeparator(yourHour);
 	document.getElementById('outputMinutes').innerHTML = thousandSeparator(yourMinutes);
-	document.getElementById('outputDay').innerHTML = thousandSeparator(yourDay);
 	document.getElementById('outputSek').innerHTML = thousandSeparator(yourSek);
 
-
-//	nameDay()
+	newName();
 
 }
+
+
+
+
+//Функция вывода текста с правильными окончаниями
+function newName() {
+	document.getElementById('inputNameMoon').innerHTML = pluralForm(yourMoon, ['Месяц','Месяца','Месяцев']);
+	document.getElementById('inputNameWeek').innerHTML = pluralForm(yourWeek, ['Неделя','Недели','Недель']);
+	document.getElementById('inputNameDay').innerHTML = pluralForm(yourDay, ['День','Дня','Дней']);
+	document.getElementById('inputNameHour').innerHTML = pluralForm(yourHour, ['Час','Часа','Часов']);
+	document.getElementById('inputNameMinutes').innerHTML = pluralForm(yourMinutes, ['Минута','Минуты','Минут']);
+	document.getElementById('inputNameSek').innerHTML = pluralForm(yourSek, ['Секунда','Секунды','Секунд']);
+}
+
+
 
 
 
@@ -65,10 +66,10 @@ var thousandSeparator = function(str) {
     return output;
 }
 
-
-
-
-
+// функция склонения окончания по числу:
+function pluralForm ( n, forms ) {
+    return forms[(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2) ];
+}
 
 
 
