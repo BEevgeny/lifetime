@@ -64,3 +64,13 @@ var thousandSeparator = function(str) {
     }
     return output;
 }
+
+
+
+
+
+
+
+
+
+

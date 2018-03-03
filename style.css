@@ -1,4 +1,7 @@
-body { margin: 0;
+html { height:100% }
+
+body {
+	margin: 0;
 	background-image: url(images/bg2.jpg);
     background-size: cover;
 }
@@ -8,20 +11,7 @@ body { margin: 0;
     padding-left: 15px;
     padding-right: 15px;
     min-width: 700px;
-//  background-image: url(images/bg2.jpg);
-//	background-size: cover;
 }
-
-/*.main {
-	min-height: 100%;
-	padding-bottom: 10%;
-}*/
-
-/*.header {
-	padding-top: 5%;
-	background-image: url(images/logo.jpg);
-	background-size: cover;
-}*/
 
 .learn {
     background-color: #5a1e09;
