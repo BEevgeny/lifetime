@@ -57,10 +57,7 @@ body { margin: 0;
 
 
 .footer {
-//	  background-image: url(images/bg.jpg);
-//    background-size: cover;
-//    background-color: #5a1e09;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     height: 100px;
 }
 
