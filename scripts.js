@@ -75,3 +75,5 @@ function pluralForm ( n, forms ) {
 
 
 
+// настройки анимации кнопки
+
