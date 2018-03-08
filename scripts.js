@@ -120,20 +120,3 @@ for (var i = 0; i < jealousButton.length; i++) {
   }, false);
 
 }
-
-//  JQUERY CODE
-// $(".btn" ).mouseover(function() {
-//   $("#sound-wohoo")[0].play();
-//   $("#sound-me")[0].play();
-//   $(this).addClass("yeay");
-//  $(this).siblings().addClass("pick-me");
-//   $(this).siblings().children( ".hand" ).css( "display", "block" );
-// });
-
-// $(".btn" ).mouseout(function() {
-//   $("#sound-woohoo")[0].pause();
-//   $("#sound-me")[0].pause();
-//   $(this).removeClass("yeay");
-//    $(".btn").removeClass("pick-me");
-// });
-
